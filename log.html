@@ -1,79 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .login-container {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 300px;
-    }
-    .login-container h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .login-container label {
-      font-size: 14px;
-      margin-bottom: 5px;
-      display: block;
-    }
-    .login-container input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .login-container button {
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .login-container button:hover {
-      background-color: #45a049;
-    }
-    .login-container p {
-      text-align: center;
-      font-size: 14px;
-    }
-    .login-container a {
-      color: #4CAF50;
-      text-decoration: none;
-    }
-  </style>
+
+<!-- saved from url=(0057)https://app2.helwan.edu.eg/HNU/Tasgel/2023-2024/login.asp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+	<title>����� ����� �������|������ ����������</title>
+
+<link href="./����� ����� �������_������ ����������_files/HNU.css" rel="stylesheet" type="text/css">
+
+
+<meta name="generator" content="ASPMaker v6.1.0.0">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form action="login-handler.php" method="POST">
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required>
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
+<script type="text/javascript">
+<!--
+var EW_DATE_SEPARATOR; // Default date separator
+EW_DATE_SEPARATOR = "/";
+if (EW_DATE_SEPARATOR == '') EW_DATE_SEPARATOR = '/';
+EW_UPLOAD_ALLOWED_FILE_EXT = "jpg,jpeg,pdf"; // Allowed upload file extension
+var EW_FIELD_SEP = ', '; // Default field separator
+// Ajax settings
+EW_LOOKUP_FILE_NAME = "ewlookup61.asp"; // lookup file name
+EW_ADD_OPTION_FILE_NAME = "ewaddopt61.asp"; // add option file name
+// Auto suggest settings
+var EW_AST_SELECT_LIST_ITEM = 0;
+var EW_AST_TEXT_BOX_ID;
+var EW_AST_CANCEL_SUBMIT;
+var EW_AST_OLD_TEXT_BOX_VALUE = "";
+var EW_AST_MAX_NEW_VALUE_LENGTH = 5; // Only get data if value length <= this setting
+// Multipage settings
+var ew_PageIndex = 0;
+var ew_MaxPageIndex = 0;
+var ew_MinPageIndex = 0;
+var EW_TABLE_CLASSNAME = "ewTable"; // Note: changed the class name as needed
+var ew_MultiPageElements = new Array();
+//-->
+</script>
+<script type="text/javascript" src="./����� ����� �������_������ ����������_files/ew61.js.download"></script>
+<script type="text/javascript" src="./����� ����� �������_������ ����������_files/userfn61.js.download"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+// Write your client script here, no need to add script tags.
+// To include another .js script, use:
+// ew_ClientScriptInclude("my_javascript.js");
+//-->
+</script>
+<div align="center">
+	<table border="0" width="1001" dir="rtl">
+		<tbody><tr>
+			<td width="995" colspan="2">
+			<p align="center">
+			<img border="0" src="./����� ����� �������_������ ����������_files/Main.jpg" width="995" height="198"></p></td>
+		</tr>
+		<tr>
+			<td background="./����� ����� �������_������ ����������_files/001.jpg" width="755">
+			<p align="center"><b>
+			<font size="5" color="#FFFFFF"><span lang="ar-eg">
+			<a href="https://app2.helwan.edu.eg/HNU/Tasgel/2023-2024/register.asp">
+			<font color="#FFFFFF">����� ��� ���</font></a> | <a href="https://app2.helwan.edu.eg/HNU/Tasgel/2023-2024/login.asp">
+			<font color="#FFFFFF">���� ������ ���� �� ���</font></a></span></font></b></p></td>
+			<td width="250" bgcolor="#800000">
+			
+			<p align="center"><font size="5" color="#FFFFFF"><b>������ ���� 2023</b></font></p></td>
+		</tr>
+	</tbody></table>
+</div>
 
-      <button type="submit">Login</button>
-    </form>
-    <p>Don't have an account? <a href="register.html">Sign up</a></p>
-  </div>
-</body>
-</html>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// Write your client script here, no need to add script tags.
+// To include another .js script, use:
+// ew_ClientScriptInclude("my_javascript.js"); 
+//-->
+</script>
+<script type="text/javascript">
+<!--
+
+function ew_ValidateForm(fobj) {
+	if (!ew_HasValue(fobj.username)) {
+		if  (!ew_OnError(fobj.username, "�� ���� ���� ��� ��������"))
+			return false;
+	}
+	if (!ew_HasValue(fobj.password)) {
+		if (!ew_OnError(fobj.password, "�� ���� ���� ���� ������"))
+			return false;
+	}
+	return true;
+}
+//-->
+</script>
+
+<form action="https://app2.helwan.edu.eg/HNU/Tasgel/2023-2024/login.asp" method="post" onsubmit="return ew_ValidateForm(this);">
+<div align="center">
+&nbsp;<table border="0" cellpadding="2" dir="rtl" width="1000">
+	<tbody><tr>
+		<td width="1042" align="center" colspan="3" background="./����� ����� �������_������ ����������_files/001.jpg"><b>
+		<font face="Traditional Arabic" size="5" color="#FFFFFF">���� ����� 
+		������ ��������</font></b></td>
+	</tr>
+	<tr>
+		<td width="220" align="center" background="./����� ����� �������_������ ����������_files/ban.jpg">
+		<span class="aspmaker"><span lang="ar-eg"><b>
+		<font face="Traditional Arabic" size="4" color="#FFFFFF">����� ������</font></b></span></span></td>
+		<td width="554" align="center"><span class="aspmaker"><input type="password" name="username" id="username" size="20" value=""></span></td>
+		<td width="200" align="center" background="./����� ����� �������_������ ����������_files/ban.jpg">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="220" align="center" background="./����� ����� �������_������ ����������_files/ban.jpg">
+		<span class="aspmaker"><span lang="ar-eg"><b>
+		<font face="Traditional Arabic" size="4" color="#FFFFFF">����� ����� 
+		������</font></b></span></span></td>
+		<td width="554" align="center"><span class="aspmaker"><input type="password" name="password" id="password" size="20"></span></td>
+		<td width="200" align="center" background="./����� ����� �������_������ ����������_files/ban.jpg">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center" background="./����� ����� �������_������ ����������_files/001.jpg"><span class="aspmaker"><input type="submit" name="submit" id="submit" value="  �������  "></span></td>
+	</tr>
+</tbody></table>
+</div>
+</form>
+<br>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// Write your startup script here
+// document.write("page loaded");
+//-->
+</script>
+
+			<p>&nbsp;</p>
+		
+		<!-- right column (end) -->
+	
+
+		
+	
+<!-- content (end) -->
+<!-- footer (begin) -->
+	
+		
+<div align="center">
+<table width="1000" border="0" cellspacing="0" cellpadding="4" dir="rtl" background="./����� ����� �������_������ ����������_files/001.jpg">
+	<tbody><tr class="ewFooterRow">
+		<td>
+		<p align="center">
+		<font face="Traditional Arabic" size="4" color="#FFFFFF"><b>&nbsp;<!-- *** Note: Only licensed users are allowed to remove or change the following copyright statement. *** -->
+		</b></font>
+	<font class="ewFooterText"></font>
+		<b><font face="Traditional Arabic" size="4" color="#FFFFFF">
+	<!-- Place other links, for example, disclaimer, here -->
+		<span lang="ar-eg">���� ������ ������ ������� ������ ���� ��������� 
+		������� ������ ����� ����� 2025 </span></font><span lang="en">
+		<font size="4" color="#FFFFFF" face="Times New Roman">�</font></span></b></p></td>
+	</tr>
+</tbody></table>
+		</div>
+		
+	
+<!-- footer (end) -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// Write your global startup script here
+// document.write("page loaded");
+//-->
+</script>
+
+
+
+<div id="veepn-guard-alert"><template shadowrootmode="open"><style>html{box-sizing:border-box;text-size-adjust:100%;word-break:normal;-moz-tab-size:4;tab-size:4}*,:before,:after{background-repeat:no-repeat;box-sizing:border-box}:before,:after{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}hr{overflow:visible;height:0;color:inherit;border:0;border-top:1px solid}details,main{display:block}summary{display:list-item}small{font-size:80%}[hidden]{display:none}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}a{background-color:transparent}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace}pre{font-size:1em}b,strong{font-weight:bolder}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}iframe{border-style:none}input{border-radius:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit;color:inherit}optgroup{font-weight:700}button{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit],[role=button]{cursor:pointer}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button;-moz-appearance:button;appearance:button}button,input,select,textarea{background-color:transparent;border-style:none}button:-moz-focusring,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{outline:1px dotted ButtonText}select{-webkit-appearance:none;-moz-appearance:none;appearance:none}a:focus,button:focus,input:focus,select:focus,textarea:focus{outline-width:0}select::-ms-expand{display:none}select::-ms-value{color:currentcolor}legend{border:0;color:inherit;display:table;white-space:normal;max-width:100%}::-webkit-file-upload-button{-webkit-appearance:button;-moz-appearance:button;appearance:button;color:inherit;font:inherit}[disabled]{cursor:default}img{border-style:none}progress{vertical-align:baseline}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled=true]{cursor:default}ul,ol{list-style-type:none}figure{margin:0}.guard-popup{font-family:FigtreeVF,sans-serif;position:fixed;z-index:2147483638;top:8px;left:24px;overflow:visible;color:#222e3a;background-color:#fff;max-width:416px;width:calc(100% - 48px);border-radius:16px;box-shadow:0 4px 20px #00000040;padding:24px}.guard-popup__header{display:flex;justify-content:space-between;align-items:center;column-gap:16px;margin-bottom:24px}.guard-popup__close{display:flex;align-items:center;justify-content:center;width:24px;height:24px;opacity:.7}.guard-popup__img{line-height:0;margin-bottom:24px}.guard-popup__img img{width:100%;aspect-ratio:368/142;object-fit:cover;border-radius:12px;overflow:hidden}.guard-popup__title{font-size:24px;line-height:32px;margin-bottom:8px}.guard-popup__description{font-size:20px;line-height:28px;font-weight:500;color:#4a5764;margin-bottom:28px}.guard-popup__actions{display:flex;justify-content:flex-end;column-gap:16px}.guard-popup__btn{display:flex;align-items:center;justify-content:center;padding:8px 16px;border-radius:5px;font-size:16px;line-height:24px;font-weight:700;cursor:pointer;color:#fff;background:linear-gradient(180deg,#5695fd,#1554ff)}</style></template></div><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style><div id="veepn-breach-alert"><template shadowrootmode="open"><style>.breach-popup{font-family:FigtreeVF,sans-serif;position:fixed;z-index:2147483638;text-rendering:optimizelegibility;top:0;left:0;right:0;pointer-events:none;padding-inline:16px;height:0;overflow:visible;color:#222e3a}.breach-popup *{box-sizing:border-box}.breach-popup__inner{background-color:#de4558;width:100%;border-radius:16px;margin-inline:auto;pointer-events:all;position:relative;transition:transform .25s ease-in-out,max-width .25s ease-in-out;transform:translateY(16px);max-height:calc(100svh - 80px);display:flex;flex-direction:column}.breach-popup__header{min-height:32px;display:flex;align-items:center;justify-content:space-between;column-gap:16px;padding:4px;cursor:pointer}.breach-popup__close{cursor:pointer;background-color:transparent;border-style:none;outline:none;display:flex;align-items:center;justify-content:center;width:24px;height:24px;flex-shrink:0;opacity:.5}.breach-popup__wrap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s ease-in-out;overflow:hidden}.breach-popup__content{overflow:hidden;opacity:0;transform:translateY(-10px)}.breach-popup--minimize .breach-popup__inner{max-width:485px;transform:translateY(-100%)}.breach-popup--collapse .breach-popup__inner{max-width:485px}.breach-popup--expand .breach-popup__inner{max-width:1120px}.breach-popup--expand .breach-popup__wrap{grid-template-rows:1fr}.breach-popup--expand .breach-popup__content{opacity:1;transform:translateY(0);transition:transform .25s ease-in-out,opacity .25s ease-in-out;transition-delay:.15s}.breach-popup--expand .breach-popup__header{cursor:default}.breach-info{padding:2px;height:100%}.breach-info__inner{padding:22px 22px 0;background-color:#fff;border-bottom-left-radius:15px;border-bottom-right-radius:15px;height:100%;overflow:auto}.breach-info__alert{font-size:24px;line-height:32px;font-weight:700;margin:0}.breach-info__list{margin-top:24px;display:flex;flex-wrap:wrap;gap:24px}@media only screen and (width >= 992px){.breach-info__list{flex-wrap:nowrap}}.breach-info__item{width:100%}.breach-info__item:nth-child(2){max-width:320px}.breach-info__item:nth-child(3){max-width:200px}.breach-info__title{font-size:18px;font-weight:700;line-height:32px;letter-spacing:-.1px;color:#de4558;margin-top:0;margin-bottom:4px}.breach-info__description{font-size:16px;line-height:28px;letter-spacing:-.1px}.breach-info__description ul{margin:0}.breach-info__actions{display:flex;justify-content:center;padding-top:32px;padding-bottom:22px;background-color:#fff;position:sticky;bottom:0}.breach-info__btn{cursor:pointer;border-style:none;outline:none;display:inline-flex;align-items:center;height:48px;padding-inline:20px;border-radius:12px;text-align:center;font-size:16px;font-weight:700;line-height:28px;letter-spacing:-.1px;color:#fff;background-color:#ff6400}.button-expand{position:absolute;bottom:0;left:50%;transform:translate(-50%,100%);z-index:1}.button-expand__pointer{cursor:pointer}.button-expand__alert{pointer-events:none;transition:opacity .25s ease-in-out}.button-expand__arrow{pointer-events:none;transition:transform .25s ease-in-out,opacity .25s ease-in-out;transform-origin:center}.button-expand--minimize .button-expand__arrow,.button-expand--collapse .button-expand__alert,.button-expand--expand .button-expand__alert{opacity:0}.button-expand--expand .button-expand__arrow{transform:rotate(180deg)}.header-collapse{display:flex;align-items:center;flex-wrap:wrap;column-gap:4px;padding-left:8px;font-size:14px;line-height:20px;letter-spacing:-.1px;color:#fff}.header-expand{display:flex;align-items:center;flex-wrap:wrap;column-gap:4px;padding-left:20px;font-size:14px;font-weight:500;line-height:20px;letter-spacing:-.1px;color:#fff}</style></template></div><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></body></html>
